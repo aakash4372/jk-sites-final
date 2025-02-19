@@ -20,7 +20,7 @@ function Navbarsection() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto d-flex flex-wrap justify-content-center gap-lg-5 gap-3">
             <Nav.Link href="#home" className="nav-item">Home</Nav.Link>
-            <Nav.Link href="#offering" className="nav-item">Offering</Nav.Link>
+            <Nav.Link href="#offering" className="nav-item">Offerings</Nav.Link>
             <Nav.Link href="#courses" className="nav-item">Courses</Nav.Link>
             <Nav.Link href="#Reviews" className="nav-item">Reviews</Nav.Link>
             <Nav.Link href="#contact" className="nav-item">Contact</Nav.Link>
