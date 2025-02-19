@@ -5,8 +5,13 @@ import './Style.css';
 
 export default function CourseCards() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); 
+    AOS.init({ duration: 1000, once: true });
   }, []);
+
+  // Function to open WhatsApp link
+  const openWhatsApp = () => {
+    window.open("https://wa.me/917397180444", "_blank");
+  };
 
   return (
     <div className="container mb-5 coursecard" id="offering">
@@ -14,32 +19,50 @@ export default function CourseCards() {
 
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center align-items-stretch pt-4">
 
+        {/* Hindi Coaching Card */}
         <div className="col d-flex" data-aos="zoom-in">
           <div className="card h-100 course-card hindi-bg shadow-lg">
             <div className="card-body d-flex flex-column text-center p-4">
               <h5 className="card-title font-weight-bold">Hindi Coaching</h5>
               <p className="card-text">Specialized courses designed for different age groups to enhance Hindi skills.</p>
-              <button className="btn btn-dark mt-auto">Enroll Now</button>
+              <button 
+                onClick={openWhatsApp} 
+                className="btn btn-dark mt-auto"
+              >
+                Enroll Now
+              </button>
             </div>
           </div>
         </div>
 
+        {/* Extracurricular & Skill-Based Programs */}
         <div className="col d-flex" data-aos="zoom-in">
           <div className="card h-100 course-card skills-bg shadow-lg">
             <div className="card-body d-flex flex-column text-center p-4">
               <h5 className="card-title font-weight-bold">Extracurricular & Skill-Based Programs</h5>
               <p className="card-text">Enhance your skills in communication, leadership, and more with our expert-led programs.</p>
-              <button className="btn btn-dark mt-auto">Explore</button>
+              <button 
+                onClick={openWhatsApp} 
+                className="btn btn-dark mt-auto"
+              >
+                Explore
+              </button>
             </div>
           </div>
         </div>
 
+        {/* Online Learning */}
         <div className="col d-flex" data-aos="zoom-in">
           <div className="card h-100 course-card online-bg shadow-lg">
             <div className="card-body d-flex flex-column text-center p-4">
               <h5 className="card-title font-weight-bold">Online Learning</h5>
               <p className="card-text">Access flexible, expert-led online courses anytime, anywhere to learn at your own pace.</p>
-              <button className="btn btn-dark mt-auto">Get Started</button>
+              <button 
+                onClick={openWhatsApp} 
+                className="btn btn-dark mt-auto"
+              >
+                Get Started
+              </button>
             </div>
           </div>
         </div>
