@@ -1,0 +1,512 @@
+    @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+    :root {
+    --font1: "Atkinson Hyperlegible Next", serif;
+    --font2: "Merriweather", serif;
+    --font3: "Poppins", sans-serif;
+    }
+
+    body,
+    html {
+    padding-top: 100px;
+    margin: 0 !important;
+    padding: 0 !important;
+    scroll-behavior: smooth !important;
+    scroll-padding-top: 120px !important;
+    }
+    .navbar-custom {
+        background-color: white !important; /* White Background */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light Shadow for Depth */
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar-toggler {
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+        background: transparent !important;
+      }
+      
+      .navbar-toggler:focus,
+      .navbar-toggler:hover {
+        box-shadow: none !important;
+        outline: none !important;
+      }
+      
+
+    /* Navbar Link Colors */
+    .navbar-custom .nav-item {
+        color: black !important;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+    }
+
+    /* Navbar Link Hover Effect */
+    .navbar-custom .nav-item:hover {
+        color: #007bff !important; /* Bootstrap Primary Blue */
+    }
+
+    .nav-item {
+    padding: 10px 15px;
+    font-size: 16px !important;
+    }
+
+    .nav-link {
+    gap: 30px !important;
+    color: grey !important;
+    font-size: 18px !important;
+    font-weight: 200;
+    font-family: var(--font1);
+    }
+
+    .nav-link.active {
+    color: #018dcb !important;
+    }
+
+    .nav-link:hover {
+    color: #018dcb !important;
+    }
+
+    .section-img img {
+    border-radius: 10px;
+    }
+
+    @media (max-width: 991px) {
+    .nav-item {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    }
+
+    /************************************************************************** */
+    /* Styling for the Home Section */
+    .Homesection1 {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for better readability */
+    }
+
+    /* Text styling */
+    .Homesection1 p {
+    font-size: 25.6px; /* Default font size */
+    font-family: var(--font3);
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    }
+
+    .Homesection1 p strong {
+    color: #0071a7;
+    }
+    @media (min-width: 320px) and (max-width: 425px) {
+    .Homesection1 p {
+        font-size: 17px !important;
+        text-align: justify !important;
+    }
+    }
+
+    /* 425px - 768px (Tablets & Large Phones) */
+    @media (min-width: 426px) and (max-width: 768px) {
+    .Homesection1 p {
+        font-size: 18px !important;
+        text-align: justify !important;
+    }
+    }
+
+    /* 768px - 1024px (Small Laptops) */
+    @media (min-width: 769px) and (max-width: 1024px) {
+    .Homesection1 p {
+        font-size: 20px !important;
+        text-align: justify !important;
+    }
+    }
+
+    /* 1024px - 1440px (Larger Screens & Desktops) */
+    @media (min-width: 1025px) and (max-width: 1440px) {
+    .Homesection1 p {
+        font-size: 22px !important;
+
+        text-align: justify;
+    }
+    }
+
+    /* Above 1440px (Large Screens & PCs) */
+    @media (min-width: 1441px) {
+    .Homesection1 p {
+        font-size: 24px !important;
+        text-align: justify;
+    }
+    }
+
+    /* Image styling */
+    .Homesection1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Media Queries for Responsive Font Sizes */
+    @media (max-width: 1200px) {
+    .Homesection1 p {
+        font-size: 16px; /* Slightly smaller for large tablets */
+    }
+    }
+
+    @media (max-width: 992px) {
+    .Homesection1 p {
+        font-size: 15px; /* Adjust for tablets */
+        text-align: center; /* Keep text centered on medium screens */
+    }
+    }
+
+    @media (max-width: 768px) {
+    .Homesection1 p {
+        font-size: 14px; /* Adjust for mobile screens */
+    }
+    }
+
+    @media (max-width: 576px) {
+    .Homesection1 p {
+        font-size: 13px; /* Smallest adjustment for small mobile screens */
+    }
+    }
+
+    /*  */
+    /* Container Styling */
+    .coursecard-head {
+    font-family: var(--font1) !important;
+    }
+    .coursecard {
+    max-width: 1200px !important;
+    }
+
+    /* Card Styling */
+    .course-card {
+    border-radius: 10px !important;
+    transition: all 0.3s ease-in-out !important;
+    }
+
+    /* Background Colors */
+    .hindi-bg {
+    background-color: #ffe8cc !important; /* Light Orange */
+    }
+
+    .skills-bg {
+    background-color: #d1f7c4 !important; /* Light Green */
+    }
+
+    .online-bg {
+    background-color: #d6e4ff !important; /* Light Blue */
+    }
+
+    /* Hover Effect */
+    .course-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2) !important;
+    filter: brightness(1.1) !important;
+    }
+
+    /* Button Styling */
+    .course-card .btn {
+    border-radius: 5px !important;
+    font-weight: 600 !important;
+    }
+
+    .course-card .btn-dark {
+    background-color: #171818 !important;
+    border: none !important;
+    }
+
+    .course-card .btn-dark:hover {
+    background-color: #23272b !important;
+    }
+    /* ***************************** */
+    .card-component .course-card {
+    background-color: #0284c2; /* Default Background Color */
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 250px; /* Set a minimum height */
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    }
+    .card-component .course-card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Black shade */
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card-component .course-card:hover::after {
+        opacity: 1; /* Show black overlay on hover */
+    }
+    
+    .card-component .course-card .card-body {
+        position: relative;
+        z-index: 2; /* Ensures text remains visible */
+    }
+
+    /* Different Background Colors */
+    .card-component .course-card:nth-child(1) {
+    background-color: #0284c2;
+    }
+    .card-component .course-card:nth-child(2) {
+    background-color: #997d62;
+    }
+    .card-component .course-card:nth-child(3) {
+    background-color: #00355c;
+    }
+
+    /* Card Hover Effect */
+    .card-component .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Card Description Animation */
+    .card-component .card-description {
+        position: absolute;
+        top: 100%; /* Initially hidden below the card */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.5); /* Darker semi-transparent overlay */
+        opacity: 0; /* Initially hidden */
+        transform: translateY(10px); /* Moves slightly down */
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    }
+    
+    /* Show Description on Hover */
+    .card-component .course-card:hover .card-description {
+        top: 60%; /* Moves up */
+        opacity: 1; /* Fully visible */
+        transform: translateY(-50%);
+    }
+    
+    .card-title {
+    font-family: var(--font3);
+    }
+
+    /* **************************************** */
+    .review-section {
+    overflow: hidden; /* Prevent unwanted scrolling */
+    }
+
+    .review-slider {
+    max-width: 90%;
+    margin: auto;
+    }
+    .review-section h2 {
+    font-family: var(--font3);
+    }
+    .review-card {
+    min-height: 300px; /* Ensures all cards are at least this height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: white;
+    }
+
+    .review-content {
+    flex-grow: 1;
+    }
+    @media (min-width: 320px) and (max-width: 340px) {
+    p.review-content {
+        font-size: 15px !important;
+    }
+    }
+
+    .quote-icon {
+    font-size: 24px;
+    color: #f5c518;
+    }
+
+    .top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    }
+
+    .bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    }
+
+    .review-stars {
+    font-size: 18px;
+    margin-top: 10px;
+    }
+
+    .text-warning {
+    color: gold;
+    }
+
+    /* ******************* */
+    .footer-section {
+    background: linear-gradient(to bottom, #00006b, #121212);
+    color: white;
+    text-align: left;
+    }
+
+    .footer-logo {
+    width: 80px;
+    }
+
+    .footer-section h5 {
+    border-bottom: 2px solid #e0d3a9;
+    padding-bottom: 5px;
+    display: inline-block;
+    }
+
+    .footer-section ul {
+    padding: 0;
+    }
+
+    .footer-section ul li {
+    list-style: none;
+    }
+
+    .footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    }
+
+    .footer-section ul li a:hover {
+    color: #e0d3a9;
+    }
+
+    .social-icons a {
+    font-size: 20px;
+    color: #e0d3a9;
+    }
+
+    .social-icons a:hover {
+    color: white;
+    }
+    .logo-circle {
+    width: 70px; /* Adjust size */
+    height: 70px; /* Adjust size */
+    background-color: white; /* Background color */
+    border-radius: 50%; /* Makes it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    }
+
+    .footer-logo {
+    width: 90%; /* Adjust to fit inside */
+    height: auto;
+    }
+
+    /* ********************************** */
+    .floating-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    }
+
+    /* WhatsApp Floating Icon */
+    .whatsapp-float {
+    background-color: #25d366;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    }
+
+    .whatsapp-float:hover {
+    transform: scale(1.1);
+    }
+
+    .whatsapp-icon {
+    color: white;
+    font-size: 24px;
+    }
+
+    /* Scroll-to-Top Button */
+    .scroll-top {
+    background-color: #333;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.8;
+    }
+
+    .scroll-top:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    }
+    /* *************** */
+    @keyframes fadeIn {
+        from {
+        opacity: 0;
+        transform: translateY(20px); /* Slightly move down */
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    
+    .coursecard-head {
+        opacity: 0; /* Initially hidden */
+        animation: fadeIn 1.5s ease-in-out forwards; /* Apply animation */
+    }
+    
+
+    .course-card {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .course-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.245); /* Light black overlay */
+        z-index: 1;
+    }
+    
+    .bg-overlay {
+        position: relative;
+        z-index: 2;
+    }
+    
