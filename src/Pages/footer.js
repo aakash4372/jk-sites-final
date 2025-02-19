@@ -57,7 +57,7 @@ const Footer = () => {
             <p className="mb-0">
               &copy; {new Date().getFullYear()} 
               <a href="https://bmtechx.in" target="_blank" className="text-white text-decoration-none ms-1">
-                BMTECHin
+                BMTECHx
               </a>. All Rights Reserved.
             </p>
           </Col>
