@@ -46,7 +46,7 @@ const CardComponent = () => {
 
   return (
     <Container className="pt-5 mb-5 card-component" id="courses">
-      <h2 className="text-center  mb-5" data-aos="zoom-in">
+      <h2 className="text-center  mb-5" data-aos="zoom-in" style={{fontWeight: '600'}}>
         Courses
       </h2>
 
@@ -63,7 +63,7 @@ const CardComponent = () => {
             <Card
               className="shadow-sm card-hover course-card flex-fill text-white"
               style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(${course.image})`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.17), rgba(0, 0, 0, 0.34)), url(${course.image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "top center",
                 backgroundRepeat: "no-repeat",
@@ -74,7 +74,7 @@ const CardComponent = () => {
               }}
             >
               <Card.Body className="text-center d-flex flex-column">
-                <Card.Title>{course.title}</Card.Title>
+                <Card.Title style={{fontWeight:'600'}}>{course.title}</Card.Title>
                 <div className="card-description flex-grow-1">
                   <p
                     dangerouslySetInnerHTML={{ __html: course.description }}

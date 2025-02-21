@@ -43,8 +43,8 @@ const ReviewSlider = () => {
   };
 
   return (
-    <div className="review-section py-5 mb-5" id="Reviews">
-      <h2 className="text-center mb-4">Student & Parent Reviews</h2>
+    <div className="review-section py-5 mb-5" id="reviews">
+      <h2 className="text-center mb-4" style={{fontWeight: '600'}}>Student & Parent Reviews</h2>
       <Slider {...settings} className="review-slider">
         {reviews.map((review, index) => (
           <div key={index} className="p-3">
